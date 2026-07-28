@@ -506,8 +506,8 @@ function Show-MainMenu {
       '^6$' { Run-WindowsRepair }
       '^7$' { Run-NetworkReset }
       '^8$' { Run-AppCleanup }
-      '^9$' { Start-WorkflowLog -Name "Malware_Workflow" -Doc (Join-Path $Script:KitRoot "Docs\Malware_Workflow.md") }
-      '^10$' { Start-WorkflowLog -Name "Post_Repair_Checklist" -Doc (Join-Path $Script:KitRoot "Docs\Post_Repair_Checklist.md") }
+      '^9$' { Start-WorkflowLog -Name "Malware_Workflow" -Doc (Join-Path $Script:KitRoot "docs\Malware_Workflow.md") }
+      '^10$' { Start-WorkflowLog -Name "Post_Repair_Checklist" -Doc (Join-Path $Script:KitRoot "docs\Post_Repair_Checklist.md") }
       '^11$' { New-CustomerReport }
       '^12$' { Test-ToolInventory; Open-R2KPath (Join-Path $Script:KitRoot "Admin\Download_Dashboard.html") }
       '^13$' { Open-DownloadPages }
