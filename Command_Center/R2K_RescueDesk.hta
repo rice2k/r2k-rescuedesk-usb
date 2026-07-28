@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>R2K RescueDesk USB</title>
+<hta:application id="R2KRescueDesk" applicationname="R2K RescueDesk USB" border="thin" caption="yes" maximizebutton="yes" minimizebutton="yes" scroll="yes" singleinstance="yes" windowstate="maximize" />
+<style>
+body{margin:0;background:#eef3fb;color:#172033;font-family:Segoe UI,Arial,sans-serif}
+header{background:#111827;color:#fff;padding:22px 28px;border-bottom:5px solid #2563eb}
+h1{margin:0;font-size:30px}.sub{color:#cbd5e1;margin-top:6px}
+main{padding:22px;max-width:1200px;margin:0 auto}.hero{background:#fff;border:1px solid #d8deea;padding:18px;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.card{background:#fff;border:1px solid #d8deea;padding:16px;min-height:168px}
+h2{font-size:18px;margin:0 0 8px;color:#111827}p{line-height:1.45;color:#5c677a}.tag{display:inline-block;color:#fff;background:#2563eb;padding:3px 7px;font-size:12px;margin-bottom:8px}.tag.green{background:#0f7b5c}.tag.gold{background:#8b5e00}
+button{background:#2563eb;color:#fff;border:0;padding:9px 12px;font-family:Segoe UI,Arial,sans-serif;font-weight:600;margin-right:8px;cursor:pointer}button.secondary{background:#334155}
+</style>
+<script language="javascript">
+var shell=new ActiveXObject("WScript.Shell");
+var fso=new ActiveXObject("Scripting.FileSystemObject");
+function htaPath(){var p=decodeURIComponent(location.pathname);if(p.charAt(0)=="/")p=p.substring(1);return p.replace(/\//g,"\\");}
+var thisFile=htaPath();
+var commandDir=fso.GetParentFolderName(thisFile);
+var root=fso.GetParentFolderName(commandDir);
+function q(p){return '"' + p + '"';}
+function adminConsole(){shell.Run('powershell.exe -NoProfile -ExecutionPolicy Bypass -Command "Start-Process powershell.exe -Verb RunAs -ArgumentList ' + "'-NoProfile -ExecutionPolicy Bypass -File " + q(commandDir + "\\R2K_ServiceConsole.ps1") + "'" + '"',1,false);}
+function openPath(p){shell.Run(q(root+"\\"+p),1,false);}
+</script>
+</head>
+<body>
+<header><h1>R2K RescueDesk USB</h1><div class="sub">Professional service-bench command center for PC repair, backup, documentation, and closeout. Source: https://github.com/rice2k/r2k-rescuedesk-usb</div></header>
+<main>
+<div class="hero">
+<h2>Start Here</h2>
+<p>Use the service console for the actual job. It prompts for a ticket number, creates ticket folders, scores drive health, gates risky work behind backup checks, and packages final closeout artifacts.</p>
+<button onclick="adminConsole()">Open Service Console</button>
+<button class="secondary" onclick="openPath('Docs\\Workflow_Guide.md')">Workflow Guide</button>
+<button class="secondary" onclick="openPath('Admin\\Download_Dashboard.html')">Download Dashboard</button>
+<button class="secondary" onclick="shell.Run('https://github.com/rice2k/r2k-rescuedesk-usb',1,false)">GitHub Project</button>
+</div>
+<section class="grid">
+<div class="card"><span class="tag green">Intake</span><h2>Customer Intake</h2><p>Create a branded intake form, capture customer issue, approval points, BitLocker status, and data risk.</p></div>
+<div class="card"><span class="tag">Triage</span><h2>Device Summary</h2><p>Generate device model, serial, Windows version, memory, disk state, and a clear OK / CAUTION / STOP drive score.</p></div>
+<div class="card"><span class="tag gold">Backup Gate</span><h2>Safe Repair Flow</h2><p>Windows repair and app cleanup warn before risky work and force a backup/risk checkpoint.</p></div>
+<div class="card"><span class="tag">Tools</span><h2>Missing Tool Check</h2><p>Compare the official manifest to the local Tools folders and open the correct vendor pages.</p></div>
+<div class="card"><span class="tag green">Report</span><h2>Customer Handoff</h2><p>Create a polished HTML/Markdown report with a customer link or QR section.</p></div>
+<div class="card"><span class="tag gold">Closeout</span><h2>Close Ticket</h2><p>Gather ticket logs, reports, and artifacts into a closeout index and zip package.</p></div>
+</section>
+</main>
+</body>
+</html>

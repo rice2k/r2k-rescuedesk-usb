@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#0b1220"/>
+  <rect x="70" y="50" width="1140" height="620" rx="10" fill="#101826" stroke="#2563eb" stroke-width="3"/>
+  <text x="105" y="95" font-family="Consolas, monospace" font-size="22" fill="#22d3ee">======================================================================================</text>
+  <text x="105" y="130" font-family="Consolas, monospace" font-size="28" font-weight="700" fill="#67e8f9">R2K RESCUEDESK USB v7</text>
+  <text x="105" y="164" font-family="Consolas, monospace" font-size="22" fill="#ffffff">Service Console</text>
+  <text x="105" y="196" font-family="Consolas, monospace" font-size="17" fill="#94a3b8">One powerful workflow for intake, triage, backup, repair, closeout, and handoff.</text>
+  <text x="105" y="230" font-family="Consolas, monospace" font-size="18" fill="#22c55e">[OK]   Running as Administrator.</text>
+  <text x="105" y="262" font-family="Consolas, monospace" font-size="18" fill="#94a3b8">[INFO] Active ticket: WALKIN-1042</text>
+  <text x="105" y="314" font-family="Consolas, monospace" font-size="20" fill="#ffffff"> 2. Create customer intake form</text>
+  <text x="105" y="346" font-family="Consolas, monospace" font-size="20" fill="#ffffff"> 3. Automatic device summary + drive score</text>
+  <text x="105" y="378" font-family="Consolas, monospace" font-size="20" fill="#ffffff"> 4. Quick triage report</text>
+  <text x="105" y="410" font-family="Consolas, monospace" font-size="20" fill="#ffffff"> 5. One-click user profile backup</text>
+  <text x="105" y="442" font-family="Consolas, monospace" font-size="20" fill="#ffffff"> 6. Repair Windows (backup-gated DISM + SFC)</text>
+  <text x="105" y="474" font-family="Consolas, monospace" font-size="20" fill="#ffffff">11. Create customer report with QR/link section</text>
+  <text x="105" y="506" font-family="Consolas, monospace" font-size="20" fill="#ffffff">15. Close ticket and package artifacts</text>
+  <rect x="100" y="555" width="520" height="52" rx="6" fill="#172554" stroke="#38bdf8"/>
+  <text x="122" y="588" font-family="Consolas, monospace" font-size="20" fill="#bae6fd">Select: 3</text>
+</svg>
+

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>R2K RescueDesk Download Dashboard</title>
+<style>
+body{margin:0;background:#f5f7fb;color:#172033;font-family:Segoe UI,Arial,sans-serif}
+header{background:#111827;color:#fff;padding:22px 26px;border-bottom:5px solid #2563eb}
+h1{margin:0;font-size:26px}.sub{color:#cbd5e1;margin-top:5px}
+main{padding:20px;max-width:1180px;margin:auto}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.card{background:#fff;border:1px solid #d8deea;padding:14px;border-radius:8px}.risk{font-size:12px;padding:3px 6px;border-radius:4px;color:#fff;background:#2563eb}.risk.high{background:#b3261e}.risk.med{background:#8b5e00}.risk.low{background:#0f7b5c}
+h2{font-size:17px;margin:8px 0}.folder{font-family:Consolas,monospace;background:#eef2f8;padding:4px}.muted{color:#5c677a;line-height:1.4}a{color:#1f5eff;font-weight:700;text-decoration:none}a:hover{text-decoration:underline}
+</style>
+</head>
+<body>
+<header><h1>R2K RescueDesk Download Dashboard</h1><div class="sub">Download from official sources, place files in the listed folders, then run the hash manifest.</div></header>
+<main>
+<div class="grid">
+<div class="card"><span class="risk high">Changes USB</span><h2>Ventoy</h2><p class="muted">Build the multi-boot service USB.</p><p class="folder">Boot\Ventoy_ISOs</p><a href="https://www.ventoy.net/en/download.html">Official download</a></div>
+<div class="card"><span class="risk med">Admin install</span><h2>Windows ADK + WinPE Add-on</h2><p class="muted">Required to build the RescueDesk WinPE ISO.</p><p class="folder">Admin</p><a href="https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install">ADK</a> &nbsp; <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/download-winpe--windows-pe?view=windows-11">WinPE</a></div>
+<div class="card"><span class="risk high">Data-risk</span><h2>Windows 11 Media</h2><p class="muted">Startup repair, reset, reinstall, or clean install after backup.</p><p class="folder">Boot\Ventoy_ISOs</p><a href="https://www.microsoft.com/en-us/software-download/windows11">Official download</a></div>
+<div class="card"><span class="risk low">Backup</span><h2>Rescuezilla</h2><p class="muted">Friendly disk imaging before risky repair.</p><p class="folder">Boot\Ventoy_ISOs</p><a href="https://rescuezilla.com/download">Official download</a></div>
+<div class="card"><span class="risk low">Diagnostic</span><h2>Memtest86+</h2><p class="muted">Memory testing outside Windows.</p><p class="folder">Boot\Ventoy_ISOs</p><a href="https://www.memtest.org/">Official download</a></div>
+<div class="card"><span class="risk med">Malware</span><h2>Microsoft Safety Scanner</h2><p class="muted">Fresh second-opinion malware scan.</p><p class="folder">Tools\04_Malware_Cleanup</p><a href="https://learn.microsoft.com/en-us/defender-endpoint/safety-scanner-download">Official download</a></div>
+<div class="card"><span class="risk med">Malware</span><h2>AdwCleaner</h2><p class="muted">Adware, toolbars, browser hijacks, and PUPs.</p><p class="folder">Tools\04_Malware_Cleanup</p><a href="https://www.malwarebytes.com/adwcleaner">Official download</a></div>
+<div class="card"><span class="risk low">Diagnostics</span><h2>Sysinternals Suite</h2><p class="muted">Autoruns, ProcMon, Process Explorer, and deeper Windows triage.</p><p class="folder">Tools\05_Windows_Repair</p><a href="https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite">Official download</a></div>
+<div class="card"><span class="risk high">Recovery</span><h2>TestDisk / PhotoRec</h2><p class="muted">Partition and file recovery. Recover to a different drive.</p><p class="folder">Tools\03_Backup_Data_Recovery</p><a href="https://www.cgsecurity.org/wiki/TestDisk_Download">Official download</a></div>
+</div>
+</main>
+</body>
+</html>
+

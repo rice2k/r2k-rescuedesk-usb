@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>R2K RescueDesk USB</title>
+<style>
+  :root {
+    --bg:#f5f7fb;
+    --panel:#ffffff;
+    --text:#172033;
+    --muted:#5c677a;
+    --line:#d9dee8;
+    --blue:#1f5eff;
+    --green:#0f7b5c;
+    --gold:#8b5e00;
+    --red:#b3261e;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font-family:Segoe UI, Arial, sans-serif; }
+  header { background:#111827; color:#fff; padding:18px 24px; border-bottom:4px solid var(--blue); }
+  h1 { margin:0 0 4px; font-size:24px; }
+  .sub { color:#cbd5e1; line-height:1.4; max-width:980px; }
+  main { max-width:1180px; margin:0 auto; padding:18px 22px 32px; }
+  .notice { background:#eef6ff; border:1px solid #b7d7ff; padding:12px; margin-bottom:14px; }
+  .grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
+  .card { background:var(--panel); border:1px solid var(--line); border-radius:6px; padding:14px; min-height:178px; }
+  h2 { margin:0 0 8px; font-size:17px; }
+  p { margin:7px 0; color:var(--muted); line-height:1.43; }
+  b { color:var(--text); }
+  code { background:#eef1f6; padding:2px 4px; border-radius:4px; }
+  a { color:var(--blue); text-decoration:none; font-weight:600; }
+  a:hover { text-decoration:underline; }
+  .tag { display:inline-block; font-size:12px; color:#fff; background:var(--green); padding:2px 6px; border-radius:4px; margin-bottom:8px; }
+  .tag.warn { background:var(--gold); }
+  .tag.stop { background:var(--red); }
+  @media (max-width:900px){ .grid{grid-template-columns:1fr;} }
+</style>
+</head>
+<body>
+<header>
+  <h1>R2K RescueDesk USB</h1>
+  <div class="sub">Professional service-bench command center: one click to launch, one console to work, one place for tools, one place for reports.</div>
+</header>
+<main>
+  <div class="notice">
+    <b>First action:</b> double-click <code>START_HERE.cmd</code> to open the RescueDesk command center.
+    Source project: <a href="https://github.com/rice2k/r2k-rescuedesk-usb">github.com/rice2k/r2k-rescuedesk-usb</a>.
+  </div>
+  <section class="grid">
+    <div class="card">
+      <span class="tag">Start</span>
+      <h2>One-Click Console</h2>
+      <p><b>Use when:</b> the customer PC boots into Windows.</p>
+      <p><b>Does:</b> intake, device summary, drive score, backup gates, repair, cleanup, reports, downloads, hashes, closeout.</p>
+      <p><b>Open:</b> <code>START_HERE.cmd</code></p>
+    </div>
+    <div class="card">
+      <span class="tag warn">Boot</span>
+      <h2>Pre-Windows Repair</h2>
+      <p><b>Use when:</b> Windows will not boot or data must be copied offline.</p>
+      <p><b>Does:</b> BitLocker unlock, offline report, backup, SFC/DISM, disk checks.</p>
+      <p><a href="Docs/Build_WinPE.md">Build WinPE guide</a></p>
+    </div>
+    <div class="card">
+      <span class="tag">Workflow</span>
+      <h2>Decision Guide</h2>
+      <p><b>Use when:</b> you need to know what tool fixes which symptom.</p>
+      <p><b>Does:</b> routes no-boot, slow PC, malware, disk, network, and account recovery jobs.</p>
+      <p><a href="Docs/Tool_Decision_Guide.md">Open decision guide</a></p>
+    </div>
+    <div class="card">
+      <span class="tag">Tools</span>
+      <h2>Tool Library</h2>
+      <p><b>Use when:</b> downloading or staging repair utilities.</p>
+      <p><b>Does:</b> keeps all tools in one consistent category layout.</p>
+      <p><a href="Tools/">Open Tools folder</a></p>
+    </div>
+    <div class="card">
+      <span class="tag">Reports</span>
+      <h2>Ticket Reports</h2>
+      <p><b>Use when:</b> saving logs, screenshots, customer reports, and hashes.</p>
+      <p><b>Does:</b> keeps every job under one ticket folder.</p>
+      <p><a href="Reports/">Open Reports folder</a></p>
+    </div>
+    <div class="card">
+      <span class="tag stop">Policy</span>
+      <h2>Account Recovery</h2>
+      <p><b>Use when:</b> customer forgot password, PIN fails, or BitLocker appears.</p>
+      <p><b>Does:</b> legitimate recovery only. No bypass or cracking tools.</p>
+      <p><a href="Docs/Account_Recovery_Policy.md">Open policy</a></p>
+    </div>
+    <div class="card">
+      <span class="tag">Downloads</span>
+      <h2>Official Downloads</h2>
+      <p><b>Use when:</b> building or refreshing the USB.</p>
+      <p><b>Does:</b> official URLs, placement folders, and what each tool fixes.</p>
+      <p><a href="Admin/Download_These_Files.md">Download checklist</a></p>
+    </div>
+    <div class="card">
+      <span class="tag">Docs</span>
+      <h2>Workflow Guide</h2>
+      <p><b>Use when:</b> training techs or standardizing the bench process.</p>
+      <p><b>Does:</b> intake, triage, backup, repair, and handoff flow.</p>
+      <p><a href="Docs/Workflow_Guide.md">Open workflow guide</a></p>
+    </div>
+    <div class="card">
+      <span class="tag">Admin</span>
+      <h2>Manifest</h2>
+      <p><b>Use when:</b> checking official URLs, licenses, tool folders, and refresh notes.</p>
+      <p><b>Does:</b> keeps the USB maintainable.</p>
+      <p><a href="Admin/Manifests/Tool_Manifest.csv">Open manifest</a></p>
+    </div>
+  </section>
+</main>
+</body>
+</html>

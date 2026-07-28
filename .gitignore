@@ -1,0 +1,27 @@
+# Customer/job data
+Reports/Tickets/
+Reports/Exports/
+Reports/Screenshots/
+Reports/Closeouts/
+Reports/Hashes/*.csv
+
+# Downloaded tools and large boot media
+Tools/**/*.exe
+Tools/**/*.msi
+Tools/**/*.zip
+Tools/**/*.7z
+Tools/**/*.iso
+Tools/**/*.img
+Tools/**/*.wim
+Boot/Ventoy_ISOs/*
+!Boot/Ventoy_ISOs/.gitkeep
+
+# Generated packages and local temp
+*.log
+*.tmp
+*.bak
+*.zip
+*.iso
+Thumbs.db
+desktop.ini
+
