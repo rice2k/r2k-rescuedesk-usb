@@ -2,6 +2,7 @@
 
 **R2K RescueDesk USB** is a professional service-bench command center for PC repair shops. It helps a technician move from intake to triage, backup, repair, customer reporting, and closeout without hunting through a messy USB folder.
 
+> Project page: [rice2k.github.io/r2k-rescuedesk-usb](https://rice2k.github.io/r2k-rescuedesk-usb/)  
 > Source: [github.com/rice2k/r2k-rescuedesk-usb](https://github.com/rice2k/r2k-rescuedesk-usb)
 
 ![R2K RescueDesk launchpad](assets/screenshots/launchpad.svg)
@@ -108,4 +109,3 @@ Admin\Manifests\Tool_Manifest.csv
 ## License
 
 The scripts and documentation in this repository are licensed under MIT. Third-party tools are not included and remain under their own licenses.
-

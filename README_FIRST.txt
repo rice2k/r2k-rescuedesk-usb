@@ -3,6 +3,9 @@ R2K RescueDesk USB v7
 Source project:
 https://github.com/rice2k/r2k-rescuedesk-usb
 
+Project page:
+https://rice2k.github.io/r2k-rescuedesk-usb/
+
 Start here:
 
 1. Double-click START_HERE.cmd.

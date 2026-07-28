@@ -1,2 +1,2 @@
 https://github.com/rice2k/r2k-rescuedesk-usb
-
+https://rice2k.github.io/r2k-rescuedesk-usb/

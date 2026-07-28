@@ -8,6 +8,7 @@ $Script:KitRoot = Split-Path -Parent $Script:ConsoleRoot
 $Script:ReportsRoot = Join-Path $Script:KitRoot "Reports\Tickets"
 $Script:CurrentTicket = $Ticket
 $Script:ProjectUrl = "https://github.com/rice2k/r2k-rescuedesk-usb"
+$Script:ProjectPageUrl = "https://rice2k.github.io/r2k-rescuedesk-usb/"
 
 function Write-R2KBanner {
   param(
@@ -23,6 +24,7 @@ function Write-R2KBanner {
   Write-Host $line -ForegroundColor DarkCyan
   Write-Host " $Subtitle" -ForegroundColor Gray
   Write-Host " Source : $Script:ProjectUrl" -ForegroundColor DarkGray
+  Write-Host " Page   : $Script:ProjectPageUrl" -ForegroundColor DarkGray
   Write-Host " Started: $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')" -ForegroundColor Gray
   Write-Host $line -ForegroundColor DarkCyan
   Write-Host ""
@@ -494,6 +496,7 @@ function Show-MainMenu {
     Write-Host "16. Open GUI launchpad" -ForegroundColor White
     Write-Host "17. Open Tools folder" -ForegroundColor White
     Write-Host "18. Open Reports folder" -ForegroundColor White
+    Write-Host "19. Open GitHub project page" -ForegroundColor White
     Write-Host " Q. Quit" -ForegroundColor White
     Write-Host ""
     $choice = Read-Host "Select"
@@ -516,6 +519,7 @@ function Show-MainMenu {
       '^16$' { Open-R2KPath (Join-Path $Script:KitRoot "START_HERE.html") }
       '^17$' { Open-R2KPath (Join-Path $Script:KitRoot "Tools") }
       '^18$' { Open-R2KPath (Join-Path $Script:KitRoot "Reports") }
+      '^19$' { Start-Process $Script:ProjectPageUrl }
       '^(Q|q)$' { return }
       default { Write-R2KWarn "Invalid selection."; Pause-R2K }
     }
