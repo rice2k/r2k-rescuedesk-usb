@@ -4,6 +4,11 @@ Reports/Exports/
 Reports/Screenshots/
 Reports/Closeouts/
 Reports/Hashes/*.csv
+!Reports/README_REPORTS.txt
+!Reports/Exports/.gitkeep
+!Reports/Screenshots/.gitkeep
+!Reports/Closeouts/.gitkeep
+!Reports/Hashes/.gitkeep
 
 # Downloaded tools and large boot media
 Tools/**/*.exe
@@ -13,6 +18,7 @@ Tools/**/*.7z
 Tools/**/*.iso
 Tools/**/*.img
 Tools/**/*.wim
+!Tools/**/.gitkeep
 Boot/Ventoy_ISOs/*
 !Boot/Ventoy_ISOs/.gitkeep
 
@@ -24,4 +30,3 @@ Boot/Ventoy_ISOs/*
 *.iso
 Thumbs.db
 desktop.ini
-
