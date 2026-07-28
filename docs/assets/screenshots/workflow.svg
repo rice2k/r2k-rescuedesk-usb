@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#f6f8fc"/>
+  <text x="70" y="70" font-family="Segoe UI, Arial" font-size="34" font-weight="700" fill="#172033">R2K RescueDesk Workflow</text>
+  <text x="70" y="105" font-family="Segoe UI, Arial" font-size="18" fill="#5c677a">A simple repair-shop path from customer intake to closeout.</text>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="5" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L6,3 z" fill="#2563eb"/>
+    </marker>
+  </defs>
+  <g font-family="Segoe UI, Arial">
+    <rect x="70" y="160" width="180" height="90" rx="10" fill="#ffffff" stroke="#d8deea"/>
+    <text x="105" y="195" font-size="18" font-weight="700" fill="#172033">Intake</text>
+    <text x="95" y="225" font-size="14" fill="#5c677a">Approval + symptoms</text>
+    <line x1="250" y1="205" x2="330" y2="205" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="340" y="160" width="180" height="90" rx="10" fill="#ffffff" stroke="#d8deea"/>
+    <text x="374" y="195" font-size="18" font-weight="700" fill="#172033">Triage</text>
+    <text x="365" y="225" font-size="14" fill="#5c677a">Device + drive score</text>
+    <line x1="520" y1="205" x2="600" y2="205" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="610" y="160" width="180" height="90" rx="10" fill="#ffffff" stroke="#d8deea"/>
+    <text x="650" y="195" font-size="18" font-weight="700" fill="#172033">Backup</text>
+    <text x="634" y="225" font-size="14" fill="#5c677a">Protect data first</text>
+    <line x1="790" y1="205" x2="870" y2="205" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="880" y="160" width="180" height="90" rx="10" fill="#ffffff" stroke="#d8deea"/>
+    <text x="925" y="195" font-size="18" font-weight="700" fill="#172033">Repair</text>
+    <text x="904" y="225" font-size="14" fill="#5c677a">Guided workflows</text>
+    <line x1="1060" y1="205" x2="1140" y2="205" stroke="#2563eb" stroke-width="4" marker-end="url(#arrow)"/>
+    <rect x="70" y="340" width="180" height="90" rx="10" fill="#ffffff" stroke="#d8deea"/>
+    <text x="112" y="375" font-size="18" font-weight="700" fill="#172033">Report</text>
+    <text x="95" y="405" font-size="14" fill="#5c677a">Customer handoff</text>
+    <rect x="340" y="340" width="180" height="90" rx="10" fill="#ffffff" stroke="#d8deea"/>
+    <text x="387" y="375" font-size="18" font-weight="700" fill="#172033">Close</text>
+    <text x="365" y="405" font-size="14" fill="#5c677a">Package artifacts</text>
+    <rect x="610" y="340" width="450" height="90" rx="10" fill="#eaf7f1" stroke="#9dd7bf"/>
+    <text x="642" y="375" font-size="18" font-weight="700" fill="#0f7b5c">Everything lives under the ticket folder</text>
+    <text x="642" y="405" font-size="14" fill="#33665a">Logs, reports, screenshots, backups notes, closeout index, and zip package.</text>
+  </g>
+</svg>
+
